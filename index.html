@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste de Super-Herói</title>
+  <link rel="shortcut icon" href="hero-favicon.png" type="image/png">
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    form {
+      background-color: #292929;
+      padding: 30px;
+      border-radius: 15px;
+      width: 300px;
+      margin: auto;
+    }
+    input, button {
+      margin: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 1em;
+      border: none;
+      width: 90%;
+    }
+    button, input[type="submit"] {
+      background-color: #00bcd4;
+      color: black;
+      transition: 0.3s;
+    }
+    button:hover, input[type="submit"]:hover {
+      background-color: #0097a7;
+      cursor: pointer;
+    }
+    button[type="reset"] {
+      background-color: #f44336;
+      color: white;
+    }
+    button[type="reset"]:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🦸‍♀️ Teste de Super-Herói</h1>
+  <p>Preencha seus dados e entre para a liga dos heróis!</p>
+
+  <form onsubmit="alert('Cadastro enviado para a Sede dos Heróis!'); return false;">
+    <input type="text" name="heroi" placeholder="Nome do Herói" required><br>
+    <input type="text" name="poder" placeholder="Poder Especial" required><br>
+
+    <input type="submit" value="🚀 Enviar para a Liga"><br>
+
+    <button type="button" onclick="alert('🕵️‍♂️ Dica secreta: sua identidade será protegida!')">
+      🔍 Revelar Segredo
+    </button><br>
+
+    <button type="reset">❌ Apagar Dados</button>
+  </form>
+
+</body>
+</html>
